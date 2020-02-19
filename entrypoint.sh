@@ -18,9 +18,9 @@ if [ -n "$PROJECT_PATH" ]; then
   cd "$PROJECT_PATH"
 fi
 
-if [ -n "$PROJECT_ID" ]; then
-    echo "setting firebase project to $PROJECT_ID"
-    firebase use --add "$PROJECT_ID"
+if [ -n "$ENVIRONMENT_NAME" ]; then
+    echo "setting firebase project to $ENVIRONMENT_NAME"
+    firebase use "$ENVIRONMENT_NAME"
 fi
 
 sh -c "firebase $*"
