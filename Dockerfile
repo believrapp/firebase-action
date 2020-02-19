@@ -11,6 +11,7 @@ LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
 RUN npm install -g firebase-tools
+RUN npm rebuild
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
