@@ -16,7 +16,7 @@ And since the deploy service account is using the App Engine default service acc
 needs the `Service Account User` role.
 If your only doing Hosting `Firebase Hosting Admin` is enough.
 
-* `PROJECT_ID` - **Optional**. To specify a specific project to use for all commands, not required if you specify a project in your `.firebaserc` file.
+* `ENVIRONMENT_NAME` - **Optional**. To specify a specific environment in `.farebaserc` to use for all commands
 
 * `PROJECT_PATH` - **Optional**. The path to `firebase.json` if it doesn't exist at the root of your repository. e.g. `./my-app`
 
