@@ -1,4 +1,4 @@
-FROM 10.18-slim
+FROM node:10.18-slim
 
 LABEL version="1.1.0"
 LABEL repository="https://github.com/w9jds/firebase-action"
