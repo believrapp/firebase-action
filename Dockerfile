@@ -11,7 +11,7 @@ LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="gray-dark"
 
 RUN npm install -g firebase-tools
-RUN npm rebuild --target=8.1.0 --target_platform=linux --target_arch=x64 --target_libc=glibc --update-binary
+RUN npm rebuild --target=10.17.13 --target_platform=linux --target_arch=x64 --target_libc=glibc --update-binary
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
